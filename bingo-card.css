@@ -1,0 +1,45 @@
+body {
+	background-color: white;
+	color: black;
+	font-size: 20px;
+	font-family: "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+p{
+    margin: auto;
+    width: 60%;
+    padding: 20px;  
+}
+h1, th {
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+h1 {
+	font-size: 28px;
+}
+
+table {
+	border-collapse: collapse;
+    margin: auto;
+    width: 70%;
+}
+
+th, td {
+	padding: 50px;
+	border: 5px #666 solid;
+	text-align: center;
+	font-size: 24px;
+}
+
+
+#free {
+	background-color: darkblue;
+}
+
+.square.darkblue{
+    background-color: darkblue;
+}
+.square{
+	border: 5px #666 solid;
+}

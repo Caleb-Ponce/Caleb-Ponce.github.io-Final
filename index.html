@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Make Your Own Bingo Card</title>
+	<link rel="stylesheet" rev="stylesheet" href="bingo-card.css" />
+	<script src="jquery.js"></script>
+	<link rel="stylesheet" href="bootstrap.min.css">
+	<script src="bootstrap.bundle.min.js"></script>
+</head>
+<body>
+	
+<h1>WWU Sculpture Park Bingo</h1>
+<p id="intro">Did you know that Western's campus doubles as a sculpture park? As you walk around you'll see many sculptures from artists and past students. <br> See if you can get a bingo before your friends! Or if you're touring solo, see if you can get a blackout!</p>
+<table>
+	<tr>
+		<th width="20%"  class="square">B</th>
+		<th width="20%"  class="square">I</th>
+		<th width="20%"  class="square">N</th>
+		<th width="20%"  class="square">G</th>
+		<th width="20%"  class="square">O</th>
+	</tr>
+	<tr>
+		<td id="square0" class="square">&nbsp;</td>
+		<td id="square1" class="square">&nbsp;</td>
+		<td id="square2" class="square">&nbsp;</td>
+		<td id="square3" class="square">&nbsp;</td>
+		<td id="square4" class="square">&nbsp;</td>
+	</tr>
+	<tr>
+		<td id="square5" class="square">&nbsp;</td>
+		<td id="square6" class="square">&nbsp;</td>
+		<td id="square7" class="square">&nbsp;</td>
+		<td id="square8" class="square">&nbsp;</td>
+		<td id="square9" class="square">&nbsp;</td>
+	</tr>
+	<tr>
+		<td id="square10" class="square">&nbsp;</td>
+		<td id="square11" class="square">&nbsp;</td>
+		<td id="free">Free</td>
+		<td id="square12" class="square">&nbsp;</td>
+		<td id="square13" class="square">&nbsp;</td>
+	</tr>
+	<tr>
+		<td id="square14" class="square">&nbsp;</td>
+		<td id="square15" class="square">&nbsp;</td>
+		<td id="square16" class="square">&nbsp;</td>
+		<td id="square17" class="square">&nbsp;</td>
+		<td id="square18" class="square">&nbsp;</td>
+	</tr>
+	<tr>
+		<td id="square19" class="square">&nbsp;</td>
+		<td id="square20" class="square">&nbsp;</td>
+		<td id="square21" class="square">&nbsp;</td>
+		<td id="square22" class="square">&nbsp;</td>
+		<td id="square23" class="square">&nbsp;</td>
+	</tr>
+</table>
+<p><a href="script.html" id="reload"></a> </p>
+<p id="bottom"><a href="#" onclick="setImage();">Click Me</a> to create a new card</p>
+
+<div class="accordion-item">
+	<h2 class="accordion-header" id="headingOne">
+	  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+			<p>Let's start off easy. Who made the Stairs to Nowhere?</p>
+		</button>
+	  </h2>
+	  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+		<div class="accordion-body">
+		  <p><strong>Bruce Nauman.</strong> <br> Nauman made this sculpture, officially titled Stadium Piece, in 1980 as a gift from the Virginia Wright Fund. Nauman stated that he wanted to create sculptural situations for the onlooker so that spectatorship requires a deeper commitment. </p>
+		</div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="headingTwo">
+		<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+		  <p>Is this the only statue in the cortyard?</p>
+		</button>
+	  </h2>
+	  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+		<div class="accordion-body">
+		  <p><strong>No.</strong> <br> It would be weird if I wrote this question and there wasn't! If you look north west you'll see a small turquoise triangle. This is called Flank II, it was made in 1978 by New York sculpture artist Mia Westerlund Roosen. It was recently restored by the artist because of corrosion over 30 years. Here's a video with a couple interviews  from the artist and gallery director Hafthor Ingvason. </p>
+		  <iframe width="auto" height="auto" src="https://www.youtube.com/embed/sNC-myIvifI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="headingThree">
+		<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+		  Which building in the cortyard has the most floors?
+		</button>
+	  </h2>
+	  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+		<div class="accordion-body">
+			<p> <strong>The Environmental Studies Building.</strong> <br> If you look closely you’ll see a line separating each floor, making seven floors in total. You’ll probably also notice that this building is made entirely of concrete. Because of this, it was the least energy efficient building on campus. Ironic. That is until they covered the roof in solar panels to make the building more energy neutral. </p>
+		</div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+		<h2 class="accordion-header" id="headingFour">
+		  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+			Is there an animal that you don't normally see on campus? hint: check the windows.
+		  </button>
+		</h2>
+		<div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+		  <div class="accordion-body">
+			<p></p><strong>Hey look a grizzly bear!</strong> <br>This is the logo for The Planet magazine. The Planet is a publication class offered through the Environmental Studies department. It combines the environmental focus of Huxley College with the writing and reporting skills taught in the journalism department. Students publish a quarterly environmental magazine in print version as well as online. </p>
+			<a href="https://theplanetmagazine.net/">Heres a link to their website</a>
+		  </div>
+		</div>
+	  </div>
+	  <div class="accordion-item">
+		<h2 class="accordion-header" id="headingFive">
+		  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+			What is the mascot for WWU?
+		  </button>
+		</h2>
+		<div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+		  <div class="accordion-body">
+			<p><strong>The Vikings. Specifically Victor E. Viking </strong> <br> If you look across the parking lot to the west of Stairs to Nowhere, you'll see the soccer field where many of WWU's sports teams practice. Our mascot, Victor, was introduced in 1923 and has been relatively unchanged since then. The sports offered by WWU in the fall are Soccer, Vollyball, and Basketball.</p>
+		  </div>
+		</div>
+	  </div>
+  </div>
+<script type="text/javascript" src="bingo-card.js"></script>
+</body>
+</html>
