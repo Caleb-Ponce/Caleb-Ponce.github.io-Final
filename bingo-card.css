@@ -9,14 +9,17 @@ body {
 p{
     margin: auto;
     width: 60%;
-    padding: 20px;  
+    padding: 20px;
+	font-size: 24pt;
 }
 h1, th {
 	font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-h1 {
-	font-size: 28px;
+#Title {
+	font-size: 50pt;
+	margin: 0%;
+	font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 table {
@@ -42,4 +45,6 @@ th, td {
 }
 .square{
 	border: 5px #666 solid;
+	font-size: 30pt;
+	margin: auto;
 }

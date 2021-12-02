@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<title>Make Your Own Bingo Card</title>
+	<title>WWU Sculture Scavenger HUnt</title>
 	<link rel="stylesheet" rev="stylesheet" href="bingo-card.css" />
 	<script src="jquery.js"></script>
 	<link rel="stylesheet" href="bootstrap.min.css">
@@ -10,15 +10,15 @@
 </head>
 <body>
 	
-<h1>WWU Sculpture Park Bingo</h1>
+<p id="Title">WWU Sculpture Park Bingo</p>
 <p id="intro">Did you know that Western's campus doubles as a sculpture park? As you walk around you'll see many sculptures from artists and past students. <br> See if you can get a bingo before your friends! Or if you're touring solo, see if you can get a blackout!</p>
 <table>
 	<tr>
-		<th width="20%"  class="square">B</th>
-		<th width="20%"  class="square">I</th>
-		<th width="20%"  class="square">N</th>
-		<th width="20%"  class="square">G</th>
-		<th width="20%"  class="square">O</th>
+		<th width="20%"  class="square"><p id="bingo">B</p></th>
+		<th width="20%"  class="square"><p id="bingo">I</p></th>
+		<th width="20%"  class="square"><p id="bingo">N</p></th>
+		<th width="20%"  class="square"><p id="bingo">G</p></th>
+		<th width="20%"  class="square"><p id="bingo">O</p></th>
 	</tr>
 	<tr>
 		<td id="square0" class="square">&nbsp;</td>
@@ -57,8 +57,9 @@
 	</tr>
 </table>
 <p><a href="script.html" id="reload"></a> </p>
-<p id="bottom"><a href="#" onclick="setImage();">Click Me</a> to create a new card</p>
-
+<p><a href="#" onclick="setImage();">Click Me</a> to create a new card</p>
+<p><strong>Hints:</strong> <br> Here are the titles and descriptions of each of the scuptures. If you're having trouble finding one, try to match the picture and the description to learn where it is on campus!
+</p>
 <div class="accordion-item">
 	<h2 class="accordion-header" id="headingOne">
 	  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
@@ -80,7 +81,6 @@
 	  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
 		<div class="accordion-body">
 		  <p>words here</p>
-		  <iframe width="auto" height="auto" src="https://www.youtube.com/embed/sNC-myIvifI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 		</div>
 	  </div>
 	</div>
@@ -131,7 +131,6 @@
 		<div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
 		  <div class="accordion-body">
 			<p>words here</p>
-			<a href="https://theplanetmagazine.net/">Heres a link to their website</a>
 		  </div>
 		</div>
 	  </div>
