@@ -7,21 +7,52 @@ body {
 }
 
 p{
-    margin: auto;
     width: 60%;
     padding: 20px;
 	font-size: 24pt;
+	margin: auto;
 }
 h1, th {
 	font-family: Georgia, "Times New Roman", Times, serif;
 }
 
+#intro{
+	margin: auto;
+}
+#hints{
+	margin: auto;
+}
 #Title {
 	font-size: 50pt;
 	margin: 0%;
 	font-family: Georgia, "Times New Roman", Times, serif;
+	float: left;
+	width: 70%;
+	color: white;
 }
 
+a:link{
+	color: white;
+}
+a:visited {
+	color: White;
+}
+#nav{
+	float: right;
+	width: 25%;
+	color: white;
+}
+#header{
+	position: absolute; 
+	top: 0; 
+	left: 0; 
+	background-color: darkblue; 
+	width: 100%;
+}
+
+#clear{
+	clear: both;
+}
 table {
 	border-collapse: collapse;
     margin: auto;
@@ -38,6 +69,8 @@ th, td {
 
 #free {
 	background-color: darkblue;
+	color: white;
+	font-size: 24pt;
 }
 
 .square.darkblue{
@@ -47,4 +80,25 @@ th, td {
 	border: 5px #666 solid;
 	font-size: 30pt;
 	margin: auto;
+}
+
+#intro{
+	margin-top: 250px;
+}
+#top{
+	margin-top: 250px;
+}
+
+ol{
+	width: 50%;
+	margin: auto;
+	padding: 20px;
+}
+
+li{
+	font-size: 24pt;
+}
+
+#Proof{
+	
 }

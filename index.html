@@ -2,15 +2,18 @@
 <html lang="en">
 
 <head>
-	<title>WWU Sculture Scavenger HUnt</title>
+	<title>WWU Sculture Scavenger Hunt</title>
 	<link rel="stylesheet" rev="stylesheet" href="bingo-card.css" />
 	<script src="jquery.js"></script>
 	<link rel="stylesheet" href="bootstrap.min.css">
 	<script src="bootstrap.bundle.min.js"></script>
 </head>
 <body>
-	
-<p id="Title">WWU Sculpture Park Bingo</p>
+<div id="header">
+	<p id="Title">WWU Sculpture Park Bingo</p>
+	<p id="nav"><a href="tutorial.html">Click Here </a> <br>for the rules</p>
+	<div id="clear"></div>
+</div>
 <p id="intro">Did you know that Western's campus doubles as a sculpture park? As you walk around you'll see many sculptures from artists and past students. <br> See if you can get a bingo before your friends! Or if you're touring solo, see if you can get a blackout!</p>
 <table>
 	<tr>
@@ -37,7 +40,7 @@
 	<tr>
 		<td id="square10" class="square">&nbsp;</td>
 		<td id="square11" class="square">&nbsp;</td>
-		<td id="free">Free</td>
+		<td id="free"><b>Free</b></td>
 		<td id="square12" class="square">&nbsp;</td>
 		<td id="square13" class="square">&nbsp;</td>
 	</tr>
@@ -58,8 +61,9 @@
 </table>
 <p><a href="script.html" id="reload"></a> </p>
 <p><a href="#" onclick="setImage();">Click Me</a> to create a new card</p>
-<p><strong>Hints:</strong> <br> Here are the titles and descriptions of each of the scuptures. If you're having trouble finding one, try to match the picture and the description to learn where it is on campus!
+<p id="hints"><strong>Hints:</strong> <br> Here are the titles and descriptions of each of the scuptures. If you're having trouble finding one, try to match the picture and the description to learn where it is on campus!
 </p>
+
 <div class="accordion-item">
 	<h2 class="accordion-header" id="headingOne">
 	  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
@@ -68,10 +72,12 @@
 	  </h2>
 	  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
 		<div class="accordion-body">
-		  <p>words here</p>
+		  <p>This cute little mini Totem pole is located in the circular staircase of Hagard Hall.</p>
 		</div>
 	  </div>
 	</div>
+
+
 	<div class="accordion-item">
 	  <h2 class="accordion-header" id="headingTwo">
 		<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
@@ -80,10 +86,12 @@
 	  </h2>
 	  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
 		<div class="accordion-body">
-		  <p>words here</p>
+		  <p>This Black square is actually curved and folded, and is located near the viking union dining hall.</p>
 		</div>
 	  </div>
 	</div>
+
+
 	<div class="accordion-item">
 	  <h2 class="accordion-header" id="headingThree">
 		<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
@@ -92,10 +100,12 @@
 	  </h2>
 	  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
 		<div class="accordion-body">
-			<p>words here</p>
+			<p>The Split Stone lives in the cortyard infront of Old Main.</p>
 		</div>
 	  </div>
 	</div>
+
+
 	<div class="accordion-item">
 		<h2 class="accordion-header" id="headingFour">
 		  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
@@ -104,11 +114,12 @@
 		</h2>
 		<div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
 		  <div class="accordion-body">
-			<p>words here</p>
-			<a href="https://theplanetmagazine.net/">Heres a link to their website</a>
+			<p>For Handel is the largest sculpture on campus and is located between the viking union and the PAC</p>
 		  </div>
 		</div>
 	  </div>
+
+
 	  <div class="accordion-item">
 		<h2 class="accordion-header" id="headingFive">
 		  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
@@ -117,32 +128,286 @@
 		</h2>
 		<div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
 		  <div class="accordion-body">
-			<p>words here</p>
+			<p>This peice is made from steel, rusted and varnished. It's located between Old Main and the Humanities Building</p>
 		  </div>
 		</div>
 	  </div>
   	</div>
+
+
 	  <div class="accordion-item">
-		<h2 class="accordion-header" id="headingFour">
-		  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-			<p>For Handel</p>
+		<h2 class="accordion-header" id="headingSix">
+		  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+			<p>Normanno Wedge</p>
 		  </button>
 		</h2>
-		<div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+		<div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
 		  <div class="accordion-body">
-			<p>words here</p>
+			<p>This sculpture was made by Beverly Pepper in 1980. It can be found infront of the Environmental Science Building.</p>
 		  </div>
 		</div>
 	  </div>
+
+
 	  <div class="accordion-item">
-		<h2 class="accordion-header" id="headingFive">
-		  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+		<h2 class="accordion-header" id="headingSeven">
+		  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
 			<p>Donald Judd’s untitled sculpture</p>
 		  </button>
 		</h2>
-		<div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+		<div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
 		  <div class="accordion-body">
-			<p> words here</p>
+			<p> This sculpture was was removed from campus in 2014 due to serious corrosion. But was restored and returned in 2018 to its place by Academic West.</p>
+		  </div>
+		</div>
+	  </div>
+  	</div>
+
+	  <div class="accordion-item">
+		<h2 class="accordion-header" id="headingEight">
+		  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+			<p>Skyviewing Sculpture</p>
+		  </button>
+		</h2>
+		<div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
+		  <div class="accordion-body">
+			<p>This large cube acn be found in red square.</p>
+		  </div>
+		</div>
+	  </div>
+  	</div>
+
+	  <div class="accordion-item">
+		<h2 class="accordion-header" id="headingNine">
+		  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+			<p>Wright's Triangle</p>
+		  </button>
+		</h2>
+		<div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#accordionExample">
+		  <div class="accordion-body">
+			<p> This may not look like a triangle at ground level but if you find it by Ross Enginering Technology Building.</p>
+		  </div>
+		</div>
+	  </div>
+  	</div>
+
+	  <div class="accordion-item">
+		<h2 class="accordion-header" id="headingTen">
+		  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+			<p>The Islands of the Rose Apple Tree Surrounded by the Oceans of the World for You, Oh My Darling</p>
+		  </button>
+		</h2>
+		<div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen" data-bs-parent="#accordionExample">
+		  <div class="accordion-body">
+			<p> The longest name and most intrecate design, This big bug can be found by SMATE.</p>
+		  </div>
+		</div>
+	  </div>
+  	</div>
+
+
+	  <div class="accordion-item">
+		<h2 class="accordion-header" id="headingEleven">
+		  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+			<p>Joel Shapiro Untitled (Falling Man) </p>
+		  </button>
+		</h2>
+		<div id="collapseEleven" class="accordion-collapse collapse" aria-labelledby="headingEleven" data-bs-parent="#accordionExample">
+		  <div class="accordion-body">
+			<p>This sculpture looks like a man falling over and is hiddwn away behind Bond hall and Carver Gym.</p>
+		  </div>
+		</div>
+	  </div>
+  	</div>
+
+	  <div class="accordion-item">
+		<h2 class="accordion-header" id="headingTwelve">
+		  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
+			<p>Clover</p>
+		  </button>
+		</h2>
+		<div id="collapseTwelve" class="accordion-collapse collapse" aria-labelledby="headingTwelve" data-bs-parent="#accordionExample">
+		  <div class="accordion-body">
+			<p> This is one of two indoor sculptures, it's made up of four tvs and shows an infinate video of a man walking in the woods. (really I've watched it for half an hour, there isn't a cut anywhere!) It can be found inside the Western Gallery.</p>
+		  </div>
+		</div>
+	  </div>
+  	</div>
+
+	  <div class="accordion-item">
+		<h2 class="accordion-header" id="headingThirteen">
+		  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThirteen" aria-expanded="false" aria-controls="collapseThirteen">
+			<p>Log Ramps</p>
+		  </button>
+		</h2>
+		<div id="collapseThirteen" class="accordion-collapse collapse" aria-labelledby="headingThirteen" data-bs-parent="#accordionExample">
+		  <div class="accordion-body">
+			<p> These log ramps are a great place to sit come spring quarter. They can be found outside of the Engineering Technology building.</p>
+		  </div>
+		</div>
+	  </div>
+  	</div>
+
+	  <div class="accordion-item">
+		<h2 class="accordion-header" id="headingFourteen">
+		  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFourteen" aria-expanded="false" aria-controls="collapseFourteen">
+			<p>Feats of Strength</p>
+		  </button>
+		</h2>
+		<div id="collapseFourteen" class="accordion-collapse collapse" aria-labelledby="headingFourteen" data-bs-parent="#accordionExample">
+		  <div class="accordion-body">
+			<p> These little guys are my favorite scultures on campus. they live just outside of the Biology Building.</p>
+		  </div>
+		</div>
+	  </div>
+  	</div>
+
+	
+	  <div class="accordion-item">
+		<h2 class="accordion-header" id="headingFifteen">
+		  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFifteen" aria-expanded="false" aria-controls="collapseFifteen">
+			<p>Lifted Conical Depression</p>
+		  </button>
+		</h2>
+		<div id="collapseFifteen" class="accordion-collapse collapse" aria-labelledby="headingFifteen" data-bs-parent="#accordionExample">
+		  <div class="accordion-body">
+			<p> You may not have thought of this as a sculpture, but it is! It's a raised plant bed outside of SMATE.</p>
+		  </div>
+		</div>
+	  </div>
+  	</div>
+
+
+	  <div class="accordion-item">
+		<h2 class="accordion-header" id="headingSixteen">
+		  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSixteen" aria-expanded="false" aria-controls="collapseSixteen">
+			<p>Flank II</p>
+		  </button>
+		</h2>
+		<div id="collapseSixteen" class="accordion-collapse collapse" aria-labelledby="headingSixteen" data-bs-parent="#accordionExample">
+		  <div class="accordion-body">
+			<p> The smallest sculpture on this list by far. Flank II is a terquiose wedge that can be found behind Parks Hall.</p>
+		  </div>
+		</div>
+	  </div>
+  	</div>
+
+	
+	  <div class="accordion-item">
+		<h2 class="accordion-header" id="headingSeventeen">
+		  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeventeen" aria-expanded="false" aria-controls="collapseSeventeen">
+			<p>Stadium Piece</p>
+		  </button>
+		</h2>
+		<div id="collapseSeventeen" class="accordion-collapse collapse" aria-labelledby="headingSeventeen" data-bs-parent="#accordionExample">
+		  <div class="accordion-body">
+			<p> Also known as the stairs to nowhere, This giant staircase is found in the courtyard outside of the Comunications Building.</p>
+		  </div>
+		</div>
+	  </div>
+  	</div>
+
+
+	  <div class="accordion-item">
+		<h2 class="accordion-header" id="headingEighteen">
+		  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEighteen" aria-expanded="false" aria-controls="collapseEighteen">
+			<p>Cause & Effect</p>
+		  </button>
+		</h2>
+		<div id="collapseEighteen" class="accordion-collapse collapse" aria-labelledby="headingEighteen" data-bs-parent="#accordionExample">
+		  <div class="accordion-body">
+			<p>This red and white chandelier is one of two indoor sculptures. it can be found inside Academic West.</p>
+		  </div>
+		</div>
+	  </div>
+  	</div>
+
+
+	  <div class="accordion-item">
+		<h2 class="accordion-header" id="headingNineteen">
+		  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNineteen" aria-expanded="false" aria-controls="collapseNineteen">
+			<p>Rain Forest</p>
+		  </button>
+		</h2>
+		<div id="collapseNineteen" class="accordion-collapse collapse" aria-labelledby="headingNineteen" data-bs-parent="#accordionExample">
+		  <div class="accordion-body">
+			<p> This water fountain sculpture can be found outside of the rec center.</p>
+		  </div>
+		</div>
+	  </div>
+  	</div>
+
+
+
+	  <div class="accordion-item">
+		<h2 class="accordion-header" id="headingTwenty">
+		  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwenty" aria-expanded="false" aria-controls="collapseTwenty">
+			<p>Stone Enclosure: Rock Rings</p>
+		  </button>
+		</h2>
+		<div id="collapseTwenty" class="accordion-collapse collapse" aria-labelledby="headingTwenty" data-bs-parent="#accordionExample">
+		  <div class="accordion-body">
+			<p>This sculpture is the size of a small house made of three rings of stone. it can be found next to the comunications building.</p>
+		  </div>
+		</div>
+	  </div>
+  	</div>
+
+
+	  <div class="accordion-item">
+		<h2 class="accordion-header" id="headingTwentyone">
+		  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwentyone" aria-expanded="false" aria-controls="collapseTwentyone">
+			<p>Steam Work for Bellingham</p>
+		  </button>
+		</h2>
+		<div id="collapseTwentyone" class="accordion-collapse collapse" aria-labelledby="headingTwentyone" data-bs-parent="#accordionExample">
+		  <div class="accordion-body">
+			<p> this sculpture may seam like just a square pile of rocks, but if you're lucky, you’ll see that steam rushes out of it at random times. Its cooler than it sounds trust me. it can be found between acedemic west and the Fairhaven dorms.</p>
+		  </div>
+		</div>
+	  </div>
+  	</div>
+
+
+	  <div class="accordion-item">
+		<h2 class="accordion-header" id="headingTwentytwo">
+		  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwentytwo" aria-expanded="false" aria-controls="collapseTwentytwo">
+			<p>Manus</p>
+		  </button>
+		</h2>
+		<div id="collapseTwentytwo" class="accordion-collapse collapse" aria-labelledby="headingTwentytwo" data-bs-parent="#accordionExample">
+		  <div class="accordion-body">
+			<p>This large stone pillar is located on east college way, just east of the C lots.</p>
+		  </div>
+		</div>
+	  </div>
+  	</div>
+
+
+	  <div class="accordion-item">
+		<h2 class="accordion-header" id="headingTwentythree">
+		  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwentythree" aria-expanded="false" aria-controls="collapseTwentythree">
+			<p>Bigger Big Chair</p>
+		  </button>
+		</h2>
+		<div id="collapseTwentythree" class="accordion-collapse collapse" aria-labelledby="headingTwentythree" data-bs-parent="#accordionExample">
+		  <div class="accordion-body">
+			<p>Don't go for this one unless it's the last thing you need for a bingo! Because this giant chair is the fathest from all the others between the Fairhaven dorms and BT.</p>
+		  </div>
+		</div>
+	  </div>
+  	</div>
+
+
+	  <div class="accordion-item">
+		<h2 class="accordion-header" id="headingTwentyfour">
+		  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwentyfour" aria-expanded="false" aria-controls="collapseTwentyfour">
+			<p>Garapata</p>
+		  </button>
+		</h2>
+		<div id="collapseTwentyfour" class="accordion-collapse collapse" aria-labelledby="headingTwentyfour" data-bs-parent="#accordionExample">
+		  <div class="accordion-body">
+			<p> This sculpture looks like an origami rabbit on a stick. it can be found between acedemic west and the Fairhaven dorms.</p>
 		  </div>
 		</div>
 	  </div>
